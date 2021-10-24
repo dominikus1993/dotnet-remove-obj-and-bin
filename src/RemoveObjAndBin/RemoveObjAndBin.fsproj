@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>preview</LangVersion>
+    <Version>1.0.5</Version>
+    <RollForward>Major</RollForward>
+    <ToolCommandName>remove-obj-bin</ToolCommandName>
+    <PackAsTool>true</PackAsTool>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+  <Import Project="..\..\.paket\Paket.Restore.targets" />
+</Project>
