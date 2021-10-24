@@ -1,4 +1,8 @@
-﻿
+﻿module Program
 
-// For more information see https://aka.ms/fsharp-console-apps
-printfn "Hello from F#"
+
+[<EntryPoint>]
+let main argv =
+    let res = File.findBinAndObjDictionary "/home/dominikus1993/projekty"
+    printfn "Hello from F# %A" res
+    0
