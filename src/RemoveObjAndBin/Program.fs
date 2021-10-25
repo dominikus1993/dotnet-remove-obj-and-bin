@@ -19,7 +19,7 @@ type CliError =
 let removeDirs (dir: Dir) =
     try
         printfn "Remove all obj and bin catlogs from dir %s" dir
-        let res = findBinAndObj "/home/dominikus1993/projekty/tst"
+        let res = findBinAndObj dir
                     |> rm        
                     |> Seq.toArray
         Ok(res)
